@@ -8,7 +8,7 @@ namespace CleanArchitecture.Domain.Entities
     public class Categoria : EntidadBase
     {
         [Required, MaxLength(120)]
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
 
         public int? CategoriaPadreId { get; set; }
         public Categoria? CategoriaPadre { get; set; }
